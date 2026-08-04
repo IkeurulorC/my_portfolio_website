@@ -1,0 +1,74 @@
+import React, { useState } from "react";
+import "./projects.css";
+import { motion } from "framer-motion";
+
+const quantity = 7;
+const zero = 0;
+const segmentAngle = 360 / quantity;
+
+const Projects = () => {
+  const [rotation, setRotation] = useState(0);
+
+  const handleRotate = () => {
+    setRotation((prev) => prev + segmentAngle);
+  };
+
+  // const [isDragging, setIsDragging] = useState(false);
+  // const [startX, setStartX] = useState(0);
+
+  // const handleMouseDown = (e) => {
+  //   setIsDragging(true);
+  //   setStartX(e.pageX - rotation);
+  // };
+
+  // const handleMouseMove = (e) => {
+  //   if (!isDragging) return;
+  //   e.preventDefault();
+  //   const x = e.pageX;
+  //   const walk = x - startX;
+  //   setRotation(walk);
+  // };
+
+  // const handleMouseUp = () => {
+  //   setIsDragging(false);
+  // };
+  return (
+    <>
+      <div className="banner">
+        <motion.div
+          // onMouseDown={handleMouseDown}
+          // onMouseUp={handleMouseUp}
+          // onMouseLeave={handleMouseUp}
+          // onMouseMove={handleMouseMove}
+          className="slider"
+          style={{ "--quantity": `${quantity}` }}
+          animate={{ rotateY: rotation }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+            delay: 0,
+            duration: 2,
+            ease: "easeInOut",
+          }}
+        >
+          {[...Array(quantity)].map((_, i) => (
+            <div
+              key={i}
+              className="item flex items-center justify-center"
+              style={{ "--position": `${zero + i}` }}
+            >
+              <h1 className="font-semibold! text-9xl!">{zero + i + 1}</h1>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
+      <button className="px-11! py-3! bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full! transition-all active:scale-95! shadow-lg shadow-purple-500/20">
+                Rotate
+      </button>
+    </>
+  );
+};
+
+export default Projects;

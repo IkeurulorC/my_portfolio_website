@@ -1,0 +1,93 @@
+/* Define responsive dimensions and 3D depth for different screens */
+:root {
+  --slider-width: 150px;
+  --slider-height: 200px;
+  --tz-depth: 200px; /* Mobile 3D circle radius */
+}
+
+.banner .slider {
+  position: absolute;
+  top: 20%;
+  width: var(--slider-width);
+  height: var(--slider-height);
+  /* Automatically centers the slider on any viewport size without using transform */
+  left: calc(50% - (var(--slider-width) / 2));
+  will-change: transform;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --slider-width: 180px;
+    --slider-height: 220px;
+    --tz-depth: 320px; /* Tablet 3D circle radius */
+  }
+
+  .banner .slider {
+    position: absolute;
+    top: 15%;
+    width: var(--slider-width);
+    height: var(--slider-height);
+    /* Automatically centers the slider on any viewport size without using transform */
+    left: calc(50% - (var(--slider-width) / 2));
+    will-change: transform;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --slider-width: 200px;
+    --slider-height: 250px;
+    --tz-depth: 450px; /* Desktop 3D circle radius (Your original setup) */
+  }
+
+  .banner .slider {
+    position: absolute;
+    top: 32%;
+    width: var(--slider-width);
+    height: var(--slider-height);
+    /* Automatically centers the slider on any viewport size without using transform */
+    left: calc(50% - (var(--slider-width) / 2));
+    will-change: transform;
+  }
+}
+
+.banner {
+  margin-bottom: 0;
+  width: 100%;
+  height: 100vh;
+  touch-action: none;
+  position: relative;
+  will-change: transform;
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(var(--tz-depth)); /* Pulls the dynamic radius from the variables above */
+  will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform-style: preserve-3d;
+  contain: layout paint style; /* CSS Containment prevents layout leaking to parent DOM */
+}
+
+/* Prevent native image dragging ghosting */
+.banner .slider .item img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none; /* Passes pointer events up to the item/link container */
+}
+
+.banner .slider .item svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+}

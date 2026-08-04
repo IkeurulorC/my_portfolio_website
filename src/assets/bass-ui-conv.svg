@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Background Card -->
+  <rect width="800" height="1000" rx="32" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="6"/>
+
+  <!-- Top Input Box (USD Source) -->
+  <g transform="translate(60, 80)">
+    <rect width="680" height="120" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4"/>
+    <text x="460" y="74" font-family="monospace, sans-serif" font-size="44" font-weight="700" fill="#1E293B" text-anchor="end">10,000</text>
+    <line x1="490" y1="20" x2="490" y2="100" stroke="#F1F5F9" stroke-width="3"/>
+    <text x="560" y="72" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#334155">USD</text>
+    <path d="M 625 65 L 637 80 L 649 65 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Bottom Input Box (NGN Target) -->
+  <g transform="translate(60, 230)">
+    <rect width="680" height="120" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4"/>
+    <text x="460" y="74" font-family="monospace, sans-serif" font-size="40" font-weight="700" fill="#0F172A" text-anchor="end">13,717,266</text>
+    <line x1="490" y1="20" x2="490" y2="100" stroke="#F1F5F9" stroke-width="3"/>
+    <text x="560" y="72" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#334155">NGN</text>
+    <path d="M 625 65 L 637 80 L 649 65 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Button Row: Run Conversion & Copy -->
+  <g transform="translate(60, 380)">
+    <!-- Primary Button: Run Conversion -->
+    <rect width="360" height="90" rx="18" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="180" y="56" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#1E293B" text-anchor="middle">Run Conversion</text>
+
+    <!-- Secondary Button: Copy -->
+    <rect x="420" y="0" width="260" height="90" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="3"/>
+    <text x="550" y="56" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#475569" text-anchor="middle">Copy</text>
+  </g>
+
+  <!-- Exchange Rate Live Indicator Badge -->
+  <g transform="translate(60, 505)">
+    <rect width="680" height="50" rx="12" fill="#F1F5F9"/>
+    <circle cx="30" cy="25" r="6" fill="#10B981"/>
+    <text x="48" y="32" font-family="monospace, sans-serif" font-size="18" font-weight="700" fill="#64748B">1 USD = 1,371.72 NGN</text>
+    <text x="650" y="32" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#10B981" text-anchor="end">LIVE RATE</text>
+  </g>
+
+  <!-- History Log Card Container -->
+  <g transform="translate(60, 580)">
+    <rect width="680" height="260" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="3"/>
+    
+    <!-- Table Header -->
+    <rect width="680" height="60" rx="20" fill="#F8FAFC"/>
+    <text x="40" y="38" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#64748B">Date / Time</text>
+    <text x="640" y="38" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#64748B" text-anchor="end">Base Value</text>
+    <line x1="0" y1="60" x2="680" y2="60" stroke="#E2E8F0" stroke-width="2"/>
+
+    <!-- Table Row Entry -->
+    <text x="40" y="115" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1E293B">Jul 18, 2026, 10:16 ...</text>
+    <text x="640" y="115" font-family="monospace, sans-serif" font-size="22" font-weight="800" fill="#0F172A" text-anchor="end">USD 10,000</text>
+    
+    <line x1="40" y1="150" x2="640" y2="150" stroke="#F1F5F9" stroke-width="2"/>
+
+    <!-- Pagination Pill Footer inside Card -->
+    <g transform="translate(180, 180)">
+      <rect width="50" height="50" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+      <text x="25" y="32" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">«</text>
+
+      <rect x="60" y="0" width="50" height="50" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+      <text x="85" y="32" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">‹</text>
+
+      <rect x="120" y="0" width="160" height="50" rx="10" fill="#F1F5F9"/>
+      <text x="200" y="32" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#334155" text-anchor="middle">Page 1 of 1</text>
+
+      <rect x="290" y="0" width="50" height="50" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+      <text x="315" y="32" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">›</text>
+
+      <rect x="350" y="0" width="50" height="50" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+      <text x="375" y="32" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">»</text>
+    </g>
+  </g>
+
+  <!-- Bottom Component Badge -->
+  <g transform="translate(60, 880)">
+    <rect width="680" height="70" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="40" cy="35" r="8" fill="#3B82F6"/>
+    <text x="64" y="42" font-family="monospace, sans-serif" font-size="22" font-weight="700" fill="#475569">CURRENCY CONVERTER INPUT</text>
+    <text x="640" y="42" font-family="monospace, sans-serif" font-size="20" font-weight="800" fill="#3B82F6" text-anchor="end">BASS UI COMPONENT</text>
+  </g>
+</svg>

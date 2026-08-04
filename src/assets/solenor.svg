@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <!-- Outer Card Canvas -->
+  <rect width="800" height="1000" rx="32" fill="#F9F6F0" stroke="#E5DECF" stroke-width="6"/>
+
+  <!-- Top Brand Banner: Midnight Blue -->
+  <rect x="24" y="24" width="752" height="150" rx="16" fill="#111E38"/>
+  <text x="400" y="105" font-family="'Cinzel', 'Didot', 'Playfair Display', serif" font-size="44" font-weight="600" fill="#C59B56" letter-spacing="12" text-anchor="middle">SOLENOR</text>
+  <line x1="320" y1="125" x2="480" y2="125" stroke="#C59B56" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Color Palette Swatch Section (Unlabeled Swatches Only) -->
+  <g transform="translate(24, 194)">
+    <rect width="752" height="90" rx="16" fill="#FFFFFF" stroke="#E5DECF" stroke-width="1.5"/>
+    
+    <!-- Midnight Blue -->
+    <circle cx="100" cy="45" r="28" fill="#111E38"/>
+
+    <!-- Ivory -->
+    <circle cx="250" cy="45" r="28" fill="#F9F6F0" stroke="#E5DECF" stroke-width="2"/>
+
+    <!-- Warm Gold -->
+    <circle cx="400" cy="45" r="28" fill="#C59B56"/>
+
+    <!-- Blush -->
+    <circle cx="550" cy="45" r="28" fill="#F2D4D7"/>
+
+    <!-- Slate Gray -->
+    <circle cx="700" cy="45" r="28" fill="#778B9E"/>
+  </g>
+
+  <!-- Middle Grid Section -->
+  <!-- Left Box: Packaging Mockup -->
+  <g transform="translate(24, 304)">
+    <rect width="368" height="340" rx="16" fill="#111E38"/>
+    
+    <!-- Large Dark Packaging Box with Ribbon -->
+    <g transform="translate(44, 40)">
+      <rect width="280" height="160" rx="8" fill="#1A2B4C" stroke="#253A63" stroke-width="2"/>
+      <!-- Gold Foil Brand Logo -->
+      <text x="140" y="70" font-family="'Cinzel', 'Didot', serif" font-size="18" fill="#C59B56" font-weight="600" letter-spacing="4" text-anchor="middle">SOLENOR</text>
+      <!-- Ribbon Vertical -->
+      <rect x="125" y="0" width="30" height="160" fill="#F9F6F0" opacity="0.9"/>
+      <!-- Ribbon Bow Graphic -->
+      <path d="M 110,80 C 80,60 80,100 125,80 C 80,100 125,110 140,85 C 155,110 200,100 155,80 C 200,100 200,60 170,80 Z" fill="#EADEC9"/>
+    </g>
+
+    <!-- Foreground Ivory Gift Box -->
+    <g transform="translate(90, 170)">
+      <rect width="200" height="130" rx="8" fill="#F9F6F0" stroke="#E5DECF" stroke-width="2"/>
+      <text x="100" y="70" font-family="'Cinzel', 'Didot', serif" font-size="16" fill="#C59B56" font-weight="600" letter-spacing="4" text-anchor="middle">SOLENOR</text>
+    </g>
+  </g>
+
+  <!-- Right Box: Brand Cards & Stationery -->
+  <g transform="translate(408, 304)">
+    <rect width="368" height="340" rx="16" fill="#EAE3D2"/>
+    
+    <!-- Stationery Card Top (Ivory) -->
+    <g transform="translate(40, 40)">
+      <rect width="288" height="160" rx="6" fill="#F9F6F0" stroke="#DFD7C4" stroke-width="1"/>
+      <text x="144" y="70" font-family="'Brush Script MT', 'Great Vibes', cursive, serif" font-size="22" fill="#778B9E" text-anchor="middle">With Love,</text>
+      <text x="144" y="105" font-family="'Cinzel', 'Didot', serif" font-size="20" fill="#111E38" font-weight="600" letter-spacing="4" text-anchor="middle">SOLENOR</text>
+    </g>
+
+    <!-- Dark Business Card Overlap -->
+    <g transform="translate(140, 160)">
+      <rect width="188" height="110" rx="6" fill="#111E38"/>
+      <text x="94" y="62" font-family="'Cinzel', 'Didot', serif" font-size="14" fill="#C59B56" font-weight="600" letter-spacing="3" text-anchor="middle">SOLENOR</text>
+    </g>
+  </g>
+
+  <!-- Bottom Grid Section -->
+  <!-- Bottom Left: Mobile App Mockup -->
+  <g transform="translate(24, 660)">
+    <rect width="230" height="256" rx="16" fill="#FFFFFF" stroke="#E5DECF" stroke-width="1.5"/>
+    
+    <!-- Phone Frame -->
+    <g transform="translate(45, 18)">
+      <rect width="140" height="220" rx="20" fill="#0B0F17"/>
+      <rect x="5" y="5" width="130" height="210" rx="16" fill="#F9F6F0"/>
+      
+      <!-- App Header -->
+      <rect x="5" y="5" width="130" height="35" fill="#111E38"/>
+      <text x="70" y="27" font-family="'Cinzel', serif" font-size="10" fill="#C59B56" font-weight="600" letter-spacing="2" text-anchor="middle">SOLENOR</text>
+
+      <!-- App Content Grid preview -->
+      <rect x="15" y="50" width="50" height="50" rx="6" fill="#F2D4D7"/>
+      <rect x="75" y="50" width="50" height="50" rx="6" fill="#778B9E"/>
+      <rect x="15" y="110" width="50" height="50" rx="6" fill="#C59B56"/>
+      <rect x="75" y="110" width="50" height="50" rx="6" fill="#111E38"/>
+      
+      <!-- Mobile Nav Bar -->
+      <rect x="5" y="185" width="130" height="30" fill="#FFFFFF"/>
+      <circle cx="35" cy="200" r="4" fill="#111E38"/>
+      <circle cx="70" cy="200" r="4" fill="#778B9E"/>
+      <circle cx="105" cy="200" r="4" fill="#778B9E"/>
+    </g>
+  </g>
+
+  <!-- Bottom Right (Merged): Fused Candle, Fragrance & Rose Bouquet Ambient Scene -->
+  <g transform="translate(268, 660)">
+    <rect width="508" height="256" rx="16" fill="#F2D4D7" fill-opacity="0.3" stroke="#E5DECF" stroke-width="1.5"/>
+    
+    <!-- Warm Silk Drapery Curve Accent in Background -->
+    <path d="M 0,160 Q 200,80 508,200 L 508,256 L 0,256 Z" fill="#EAE3D2" opacity="0.5"/>
+
+    <!-- Candle Pedestal (Left Side of Merged Panel) -->
+    <g transform="translate(90, 45)">
+      <!-- Gold Stand -->
+      <rect x="35" y="110" width="30" height="40" fill="#C59B56" rx="2"/>
+      <ellipse cx="50" cy="110" rx="35" ry="8" fill="#C59B56"/>
+      <ellipse cx="50" cy="150" rx="40" ry="10" fill="#C59B56"/>
+      <!-- Pillar Candle Body -->
+      <rect x="20" y="30" width="60" height="80" rx="6" fill="#FFFFFF" stroke="#F9F6F0" stroke-width="1"/>
+      <!-- Candle Flame -->
+      <path d="M 50,12 Q 58,24 50,30 Q 42,24 50,12 Z" fill="#F59E0B"/>
+      <circle cx="50" cy="24" r="3" fill="#FFF"/>
+    </g>
+
+    <!-- Glass Perfume Bottle (Center-Right Side of Merged Panel) -->
+    <g transform="translate(205, 95)">
+      <rect x="20" y="0" width="24" height="14" fill="#C59B56" rx="2"/>
+      <rect x="0" y="14" width="64" height="95" rx="10" fill="#FFFFFF" stroke="#C59B56" stroke-width="1.5" fill-opacity="0.85"/>
+      <rect x="12" y="35" width="40" height="40" fill="#F9F6F0" stroke="#E5DECF" stroke-width="1"/>
+      <text x="32" y="59" font-family="'Cinzel', serif" font-size="6" fill="#111E38" font-weight="700" letter-spacing="1" text-anchor="middle">SOLENOR</text>
+    </g>
+
+    <!-- Rose Arrangement (Far Right Side of Merged Panel) -->
+    <g transform="translate(390, 115)">
+      <!-- Dark Floral Pot Base -->
+      <rect x="-40" y="45" width="80" height="65" rx="12" fill="#111E38"/>
+      <!-- Overlapping Rose Blossoms -->
+      <!-- Back Rose -->
+      <circle cx="-25" cy="-5" r="32" fill="#F2D4D7"/>
+      <circle cx="-25" cy="-5" r="20" fill="#E8B4B8"/>
+      <!-- Main Ivory Rose -->
+      <circle cx="0" cy="10" r="38" fill="#F9F6F0"/>
+      <circle cx="-5" cy="5" r="24" fill="#EAE3D2"/>
+      <circle cx="-5" cy="5" r="12" fill="#C59B56" opacity="0.6"/>
+      <!-- Front Blush Rose -->
+      <circle cx="22" cy="0" r="30" fill="#F2D4D7"/>
+      <circle cx="22" cy="0" r="18" fill="#D98A91"/>
+      <circle cx="22" cy="0" r="8" fill="#111E38" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- Bottom Tagline Banner -->
+  <text x="400" y="960" font-family="'Cinzel', 'Didot', serif" font-size="13" font-weight="600" fill="#111E38" letter-spacing="4" text-anchor="middle">CURATED WITH CARE, GIVEN WITH GRACE</text>
+</svg>

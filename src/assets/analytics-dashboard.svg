@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <!-- Card Top Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Dashboard Canvas -->
+  <rect width="800" height="1000" rx="32" fill="#05070A" stroke="#1E293B" stroke-width="6"/>
+
+  <!-- Top Header Navigation -->
+  <g transform="translate(24, 24)">
+    <!-- Logo Badge -->
+    <rect width="40" height="40" rx="8" fill="#FFFFFF"/>
+    <text x="20" y="27" font-family="system-ui, sans-serif" font-size="22" font-weight="900" fill="#000000" text-anchor="middle">B</text>
+    <text x="50" y="22" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Bass UI Kit</text>
+    <text x="50" y="36" font-family="monospace, sans-serif" font-size="10" font-weight="600" fill="#64748B">CORE ENGINE</text>
+
+    <!-- Search Input Bar -->
+    <rect x="180" y="4" width="380" height="36" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+    <text x="204" y="27" font-family="system-ui, sans-serif" font-size="13" fill="#64748B">Search assets...</text>
+
+    <!-- Stable Build Pill & Version -->
+    <rect x="580" y="8" width="110" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.5"/>
+    <circle cx="594" cy="22" r="3" fill="#38BDF8"/>
+    <text x="638" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Stable Build</text>
+    <text x="730" y="26" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#64748B">v1.0.4</text>
+  </g>
+
+  <!-- Divider Below Header -->
+  <line x1="24" y1="80" x2="776" y2="80" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Sidebar Navigation -->
+  <g transform="translate(24, 96)">
+    <!-- Active Tab: Overview -->
+    <rect width="160" height="38" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Overview</text>
+
+    <!-- Inactive Tab: Analytics -->
+    <text x="20" y="72" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#64748B">Analytics</text>
+
+    <!-- Inactive Tab: Settings -->
+    <text x="20" y="112" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#64748B">Settings</text>
+  </g>
+
+  <!-- Vertical Divider Sidebar/Content -->
+  <line x1="200" y1="80" x2="200" y2="976" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Main Dashboard Content Area -->
+  <g transform="translate(216, 96)">
+    
+    <!-- Global Market Cap Header -->
+    <text x="0" y="12" font-family="monospace, sans-serif" font-size="11" font-weight="800" fill="#64748B">GLOBAL MARKET CAP:</text>
+    <text x="140" y="12" font-family="monospace, sans-serif" font-size="11" font-weight="800" fill="#10B981">▲ 0.85%</text>
+
+    <!-- Top Crypto Metric Cards Grid -->
+    
+    <!-- 1. Bitcoin Card -->
+    <g transform="translate(0, 24)">
+      <rect width="176" height="110" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="12" fill="#F59E0B"/>
+      <text x="24" y="29" font-family="sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">₿</text>
+      <text x="44" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Bitcoin</text>
+      <text x="44" y="33" font-family="monospace, sans-serif" font-size="10" fill="#94A3B8">BTC</text>
+      <text x="16" y="72" font-family="monospace, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">€56,004.00</text>
+      <text x="16" y="92" font-family="monospace, sans-serif" font-size="11" font-weight="700" fill="#34D399">▲ 1.795%</text>
+      <!-- Sparkline Red -->
+      <path d="M 110 80 L 125 85 L 140 75 L 155 88 L 168 82" fill="none" stroke="#F43F5E" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- 2. Ethereum Card -->
+    <g transform="translate(188, 24)">
+      <rect width="176" height="110" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="212" cy="-24" r="12" fill="#6366F1"/> <!-- Localized transform shift fix -->
+      <circle cx="24" cy="24" r="12" fill="#6366F1"/>
+      <text x="24" y="29" font-family="sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">Ξ</text>
+      <text x="44" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Ethereum</text>
+      <text x="44" y="33" font-family="monospace, sans-serif" font-size="10" fill="#94A3B8">ETH</text>
+      <text x="16" y="72" font-family="monospace, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">€1,611.78</text>
+      <text x="16" y="92" font-family="monospace, sans-serif" font-size="11" font-weight="700" fill="#34D399">▲ 1.687%</text>
+      <!-- Sparkline Green -->
+      <path d="M 110 88 L 125 82 L 140 85 L 155 72 L 168 76" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- 3. Tether Card -->
+    <g transform="translate(376, 24)">
+      <rect width="172" height="110" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="12" fill="#14B8A6"/>
+      <text x="24" y="29" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">₮</text>
+      <text x="44" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Tether</text>
+      <text x="44" y="33" font-family="monospace, sans-serif" font-size="10" fill="#94A3B8">USDT</text>
+      <text x="16" y="72" font-family="monospace, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">€0.87</text>
+      <text x="16" y="92" font-family="monospace, sans-serif" font-size="11" font-weight="700" fill="#34D399">▲ 0.042%</text>
+      <!-- Sparkline Green -->
+      <path d="M 110 82 L 122 86 L 135 78 L 150 82 L 164 74" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Assets Section Header -->
+    <text x="0" y="172" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">Assets</text>
+
+    <!-- Main Data Table Container -->
+    <g transform="translate(0, 190)">
+      <rect width="548" height="510" rx="16" fill="#0B0F17" stroke="#1E293B" stroke-width="2"/>
+
+      <!-- Table Column Headers -->
+      <text x="24" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#64748B">Name</text>
+      <text x="140" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#64748B">Ticker</text>
+      <text x="360" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#64748B" text-anchor="end">Market Cap</text>
+      <text x="524" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#64748B" text-anchor="end">Price</text>
+      <line x1="0" y1="48" x2="548" y2="48" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Table Rows -->
+      <!-- Row 1: Bitcoin -->
+      <text x="24" y="82" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Bitcoin</text>
+      <text x="140" y="82" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">BTC</text>
+      <text x="360" y="82" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€1,123,365,958,746.00</text>
+      <text x="524" y="82" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€56,004.00</text>
+      <line x1="24" y1="98" x2="524" y2="98" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 2: Ethereum -->
+      <text x="24" y="132" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Ethereum</text>
+      <text x="140" y="132" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">ETH</text>
+      <text x="360" y="132" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€194,521,680,450.00</text>
+      <text x="524" y="132" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€1,611.77</text>
+      <line x1="24" y1="148" x2="524" y2="148" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 3: Tether -->
+      <text x="24" y="182" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Tether</text>
+      <text x="140" y="182" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">USDT</text>
+      <text x="360" y="182" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€160,962,550,928.00</text>
+      <text x="524" y="182" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€0.87</text>
+      <line x1="24" y1="198" x2="524" y2="198" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 4: BNB -->
+      <text x="24" y="232" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">BNB</text>
+      <text x="140" y="232" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">BNB</text>
+      <text x="360" y="232" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€66,352,750,694.00</text>
+      <text x="524" y="232" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€498.25</text>
+      <line x1="24" y1="248" x2="524" y2="248" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 5: USDC -->
+      <text x="24" y="282" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">USDC</text>
+      <text x="140" y="282" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">USDC</text>
+      <text x="360" y="282" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€64,070,552,416.00</text>
+      <text x="524" y="282" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€0.87</text>
+      <line x1="24" y1="298" x2="524" y2="298" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 6: XRP -->
+      <text x="24" y="332" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">XRP</text>
+      <text x="140" y="332" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">XRP</text>
+      <text x="360" y="332" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€59,415,133,722.00</text>
+      <text x="524" y="332" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€0.95</text>
+      <line x1="24" y1="348" x2="524" y2="348" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 7: Solana -->
+      <text x="24" y="382" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Solana</text>
+      <text x="140" y="382" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">SOL</text>
+      <text x="360" y="382" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€38,129,385,612.00</text>
+      <text x="524" y="382" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€65.45</text>
+      <line x1="24" y1="398" x2="524" y2="398" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 8: TRON -->
+      <text x="24" y="432" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">TRON</text>
+      <text x="140" y="432" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">TRX</text>
+      <text x="360" y="432" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€26,753,963,361.00</text>
+      <text x="524" y="432" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€0.28</text>
+      <line x1="24" y1="448" x2="524" y2="448" stroke="#131C2E" stroke-width="1"/>
+
+      <!-- Row 9: Hyperliquid -->
+      <text x="24" y="482" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Hyperliquid</text>
+      <text x="140" y="482" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">HYPE</text>
+      <text x="360" y="482" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€11,527,099,547.00</text>
+      <text x="524" y="482" font-family="monospace, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="end">€51.82</text>
+    </g>
+
+    <!-- Table Pagination Footer -->
+    <g transform="translate(0, 715)">
+      <text x="0" y="20" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#64748B">Showing <tspan fill="#FFFFFF" font-weight="700">1 to 10</tspan> of <tspan fill="#FFFFFF" font-weight="700">10</tspan> entries</text>
+
+      <!-- Pagination Controls -->
+      <g transform="translate(340, 0)">
+        <rect width="28" height="28" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+        <text x="14" y="18" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">«</text>
+
+        <rect x="34" y="0" width="28" height="28" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+        <text x="48" y="18" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">‹</text>
+
+        <rect x="68" y="0" width="80" height="28" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+        <text x="108" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Page 1 of 100</text>
+
+        <rect x="154" y="0" width="28" height="28" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+        <text x="168" y="18" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">›</text>
+
+        <rect x="188" y="0" width="28" height="28" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+        <text x="202" y="18" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">»</text>
+      </g>
+    </g>
+
+  </g>
+</svg>
