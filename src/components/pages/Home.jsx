@@ -18,11 +18,11 @@ import {
 const Home = () => {
   return (
     <>
-      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-6 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center min-h-dvh px-6 text-center">
          {" "}
         {/* Wrapper to constrain width so dots are visible on the left/right */}
          {" "}
-        <div className="max-w-xl space-y-6">
+        <div className="max-w-xl mt-16! sm:mt-0! pt-1.5! sm:pt-0! space-y-6">
                  {" "}
           <span className="text-lg md:text-3xl font-bold tracking-tight text-white drop-shadow-lg">
                   Frontend <span className="text-purple-500">Developer</span> 

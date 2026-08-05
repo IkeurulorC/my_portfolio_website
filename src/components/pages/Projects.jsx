@@ -218,8 +218,14 @@ const Projects = () => {
         </motion.div>
 
         <div className="absolute top-[50%] md:top-3/5 lg:hidden lg:relative flex justify-center pb-10">
-          <div className="flex flex-col justify-center items-center max-w-11/12 md:max-w-5/10 mt-0 px-5! lg:px-11! py-2! md:py-3! text-gray-950! dark:text-white text-sm md:text-base rounded-md! md:rounded-xl lg:rounded-4xl! transition-all shadow-lg shadow-purple-500/20 mx-2!">
-            <h3 className="text-3xl! font-semibold! mb-5!">
+          <div
+            className={
+              activeIndex === 6
+                ? "hidden!"
+                : "flex flex-col justify-center items-center max-w-11/12 md:max-w-5/10 mt-0 px-5! lg:px-11! py-2! md:py-3! text-gray-950! dark:text-white! text-sm md:text-base rounded-md! md:rounded-xl lg:rounded-4xl! transition-all shadow-lg shadow-purple-500/20 mx-2!"
+            }
+          >
+            <h3 className="text-3xl! text-center! font-semibold! mb-5!">
               {" "}
               {projectDetails[activeIndex].title}
             </h3>
@@ -232,7 +238,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit Demo
+                Visit Project
                 <span className="text-purple-400"> →</span>
               </a>
             </span>
@@ -240,7 +246,13 @@ const Projects = () => {
         </div>
       </div>
       <div className="absolute hidden lg:top-4/5 lg:relative lg:flex justify-center pb-10">
-        <div className="flex flex-col justify-center items-center max-w-11/12 md:max-w-5/10 mt-0 px-5! lg:px-11! py-2! md:py-3! text-sm md:text-base dark:text-white! text-gray-950! rounded-md! md:rounded-xl lg:rounded-4xl! transition-all shadow-lg shadow-purple-500/20 mx-2!">
+        <div
+          className={
+            activeIndex === 6
+              ? "hidden!"
+              : "flex flex-col justify-center items-center max-w-11/12 md:max-w-5/10 mt-0 px-5! lg:px-11! py-2! md:py-3! text-gray-950! dark:text-white! text-sm md:text-base rounded-md! md:rounded-xl lg:rounded-4xl! transition-all shadow-lg shadow-purple-500/20 mx-2!"
+          }
+        >
           <h3 className="text-3xl! font-semibold! mb-5!">
             {" "}
             {projectDetails[activeIndex].title}
@@ -253,8 +265,9 @@ const Projects = () => {
               href={projectDetails[activeIndex].link}
               target="_blank"
               rel="noopener noreferrer"
+              className={projectDetails[activeIndex] === 3 ? "hidden" : ""}
             >
-              Visit Demo
+              Visit Project
               <span className="dark:text-purple-400 text-teal-400"> →</span>
             </a>
           </span>
