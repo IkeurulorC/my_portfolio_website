@@ -37,7 +37,7 @@ const Home = () => {
           </p>
               <EmailButton>Get In Touch</EmailButton> {" "}
         </div>
-        <div className="lg:hidden p-2.5 mt-3.5! grid grid-cols-2 gap-12 max-w-1/2 self-center justify-self-center">
+        <div className="lg:hidden pb-5! sm:pb-0! mt-3.5! grid grid-cols-2 gap-12 max-w-1/2 self-center justify-self-center">
           <SiTypescript color="#3178C6" className="w-16 h-16 lg:w-24 lg:h-24" />
           <SiGo color="#00ADD8" className="w-16 h-16 lg:w-24 lg:h-24" />
           <SiReact color="#61dafb" className="w-16 h-16 lg:w-24 lg:h-24" />
