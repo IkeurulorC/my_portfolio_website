@@ -38,7 +38,7 @@ const About = () => {
           </div>
 
           <h1 className="text-4xl! md:text-5xl! font-bold! text-slate-900 text-center! lg:text-left! dark:text-white">
-            I’m Sebastin, a developer crafting{" "}
+            I’m Sebastian, a developer crafting{" "}
             <span className="text-teal-600! dark:text-purple-600!">
               digital solutions.
             </span>
