@@ -187,7 +187,7 @@ const Contact = () => {
 
           {/* Hashnode (#2962FF) */}
           <a
-            href="https://hashnode.com/@yourusername"
+            href="https://hashnode.com/@bass111"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Hashnode Blog"
